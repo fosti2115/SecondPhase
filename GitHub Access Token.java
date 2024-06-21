@@ -1,6 +1,6 @@
 public class GitHubExample {
     // Example GitHub Access Token
-    private static final String GITHUB_ACCESS_TOKEN = "ghp_ExampleGitHubAccessToken12345";
+    private static final String GITHUB_ACCESS_TOKEN = "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";
 
     public static void main(String[] args) {
         // Your GitHub API logic here
