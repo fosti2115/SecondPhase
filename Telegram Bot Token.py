@@ -1,5 +1,5 @@
 # Example Telegram Bot Token
-TELEGRAM_BOT_TOKEN = '123456789:ABCDEF1234-Example_Token'
+TELEGRAM_BOT_TOKEN = '270485614:AAHfiqksKZ8WmR2zSjiQ7_v4TMAKdiHm9T0'
 
 def send_message(chat_id, text):
     url = f'https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage'
