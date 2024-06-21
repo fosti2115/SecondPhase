@@ -2,7 +2,7 @@ import requests
 import json
 
 # Przykładowy token Slack Webhook URL do wstawienia (który zostanie znaleziony)
-slack_webhook_url = "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX"
+slack_webhook_url = "https://hooks.slack.com/services/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"
 
 def send_message_to_slack(message: str):
     payload = {
