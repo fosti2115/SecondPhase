@@ -1,15 +1,31 @@
-using System;
+import boto3
+from botocore.exceptions import NoCredentialsError
 
-class Program
-{
-    // Example AWS Access Key and Secret Key
-    private const string AWS_ACCESS_KEY = "ABIAK52LPFORPRUCRC22";
-    private const string AWS_SECRET_KEY = "abiaExampleAWSSecretKey1234567890Example";
+# AWS credentials
+AWS_KEY_ID = "AKIAIOSFODNN7EXAMPLE"
+AWS_SECRET_ACCESS_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
 
-    static void Main()
-    {
-        // Your AWS logic here
-        Console.WriteLine("Using AWS Access Key: " + AWS_ACCESS_KEY);
-        Console.WriteLine("Using AWS Secret Key: " + AWS_SECRET_KEY);
-    }
-}
+# Function to list S3 buckets using AWS credentials
+def list_s3_buckets(aws_key_id, aws_secret_access_key):
+    try:
+        # Create a session using the provided AWS credentials
+        session = boto3.Session(
+            aws_access_key_id=aws_key_id,
+            aws_secret_access_key=aws_secret_access_key
+        )
+
+        # Create an S3 client
+        s3_client = session.client('s3')
+
+        # List the S3 buckets
+        response = s3_client.list_buckets()
+        
+        print("Buckets:")
+        for bucket in response['Buckets']:
+            print(f"  {bucket['Name']}")
+
+    except NoCredentialsError:
+        print("Credentials not available")
+
+# Call the function with the provided AWS credentials
+list_s3_buckets(AWS_KEY_ID, AWS_SECRET_ACCESS_KEY)
