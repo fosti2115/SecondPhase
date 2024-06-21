@@ -1,7 +1,7 @@
 import requests
 
 # Przykładowy Google API Key - użyj go do testowania swojego narzędzia do skanowania secretów
-API_KEY = 'AIzaSyD-vbf32de9Abc5_examplekey_ZZZaa-QRsQ'
+API_KEY = 'AIzaSyDvbf32de9Abc5examplekeyZZZaaQRsQ0'
 
 def get_geocode(address):
     url = f'https://maps.googleapis.com/maps/api/geocode/json?address={address}&key={API_KEY}'
