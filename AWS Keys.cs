@@ -2,8 +2,8 @@ import boto3
 from botocore.exceptions import NoCredentialsError
 
 # AWS credentials
-AWS_KEY_ID = "AKIAIOSFODNN7EXAMPLE"
-AWS_SECRET_ACCESS_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+AWS_KEY_ID = "AKIAJ6AS7R7DFJ4RHTAQ"
+AWS_SECRET_ACCESS_KEY = "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"
 
 # Function to list S3 buckets using AWS credentials
 def list_s3_buckets(aws_key_id, aws_secret_access_key):
