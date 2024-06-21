@@ -3,7 +3,7 @@ from azure.storage.blob import BlobServiceClient
 # Example Azure Storage Account Key
 AZURE_STORAGE_ACCOUNT_NAME = 'myaccountname'
 AZURE_STORAGE_ACCOUNT_KEY = 'oOrbZg9EDosW4nZvGoxrmSt14P49fS7zPd81h5ZBlmrUq7O3IYr7j90Zye6amnnW9M7dPvqUxKZg0s0oJm1jfd=='
-ENDPOINT_SUFFIX= 'core.windows.net'
+ENDPOINT_SUFFIX = 'core.windows.net'
 
 def list_containers():
     try:
