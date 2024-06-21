@@ -1,5 +1,5 @@
 # Example OpenAI Project API Key
-OPENAI_API_KEY = 'sk-exampleOpenAIAPIKey1234567890Example'
+OPENAI_API_KEY = 'sk-proj-u9Eljvl75Po8lqwCe3NiT3BlbkFJ9F2XAK3lRcdwrndNlz7h'
 
 def use_openai_api():
     # Your OpenAI API logic here
