@@ -1,6 +1,6 @@
 import requests
 
-mws_token = "amzn.mws.token.1234567890abcdef"
+mws_token = "amzn.mws.1234-5678-9012-3456-7890"
 
 def make_mws_request(token):
     endpoint = "https://mws.amazonservices.com/Orders/2013-09-01"
