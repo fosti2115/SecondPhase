@@ -1,5 +1,5 @@
 # Example Google Cloud API Key
-GOOGLE_CLOUD_API_KEY = 'AIzaSyD-xyz123_example_GCPkey_abcdef'
+GOOGLE_CLOUD_API_KEY = 'AIzaSyAk45NJYf83DD0Qqy65yFqNx_3rckFzDNU'
 
 def use_google_cloud_api():
     # Your Google Cloud API logic here
